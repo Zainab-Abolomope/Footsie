@@ -3,13 +3,15 @@ import React from 'react'
 const top = () => {
   return (
     <>
-    <div className='w-[1102px] h=[372px]'>
+    <div className='max-w-[1102px] max-h-[372px] m-auto'>
        <img src="./public/footsiee.png" alt="" />
 
      </div>
 
-     <div className='text-white w-[407px] h-[197px]'>
-       <p>Through our collections, we blur the borders between high fashuin and high performance.Like our sneakers by Stella McCartney Athletic clothing collection-designed to look the part inside and outside of the gym- or somew of our addidas orisinal lifestyle pieces, that can be worn as sport apparel too</p>
+     <div className='text-white w-[407px] h-[197px] relative top-[5em]  left-[223px] text-center '>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni ipsa, repellat quis optio blanditiis veniam consequuntur delectus magnam beatae?</p>
+ 
+       <img src="./public/explore.png" alt="" />
      </div></>
   )
 }

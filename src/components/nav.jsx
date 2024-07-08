@@ -13,10 +13,13 @@ const nav = () => {
       <Link to=''>Women</Link>
       <Link to=''>Kids</Link>
     </div>
+    <Link to='./cart'>
     <button className='flex w-[108] h-[35px] g-[8px] items-center'>
       <h1 className='text-white'>Your bag</h1>
       <i className='text-white'><CiShoppingCart /></i>
     </button>
+    </Link>
+  
 
   </div>
   )
