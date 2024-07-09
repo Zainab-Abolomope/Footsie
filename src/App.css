@@ -23,6 +23,32 @@
 
 }
 
+/* product.css */
+
+/* Base styles */
+.hero {
+  max-width: 100%;
+  height: 985px;
+  /* Add any other base styles you need */
+}
+
+/* Responsive styles for tablet screens */
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: auto; /* Adjust height or remove fixed height for responsiveness */
+    /* Add specific styles for tablet */
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: auto; /* Adjust height or remove fixed height for responsiveness */
+    /* Add specific styles for mobile */
+  }
+}
+
+
 
 @keyframes slideBackground{
   0%{

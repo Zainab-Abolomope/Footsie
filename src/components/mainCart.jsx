@@ -1,18 +1,14 @@
-import React from 'react'
-import '../App.css'
-import Navbar from './nav'
-import HeroCart from './heroCart'
+import React from 'react';
+import Navbar from './nav';
+import HeroCart from './heroCart';
 
-
-const mainCart = () => {
+const MainCart = () => {
   return (
-    <div className='main-cart w-[1514px] h-[941px]'>
+    <div className='main-cart md:w-full md:h-full lg:w-[1514px] lg:h-[941px]'>
       <Navbar />
       <HeroCart />
-
-
     </div>
-  )
+  );
 }
 
-export default mainCart
+export default MainCart;
