@@ -6,19 +6,19 @@ const middle = () => {
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: './public/product1.png',
+            image: '/product1.png',
             alt: 'White loafers',
         },
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: './public/product2.png',
+            image: '/product2.png',
             alt: 'Brown loafers',
         },
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: './public/product3.png',
+            image: '/product3.png',
             alt: 'Boots in a case',
         },
     ];
