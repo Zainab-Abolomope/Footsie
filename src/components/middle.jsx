@@ -66,7 +66,7 @@ const middle = () => {
                           
                           
                             <div className=''>
-                            <img src="./public/addtobag.png" alt="" />
+                            <img src="./addtobag.png" alt="" />
 
                             </div>
                             
