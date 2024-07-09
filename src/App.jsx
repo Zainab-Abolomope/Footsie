@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/product'
 import Cart from './pages/cart'
 import Checkout from './pages/checkout'
-import Navbar from './components/nav'
+// import Footer from './components/footer'
+
 
 
 
@@ -23,6 +24,8 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
 
         </Routes>
+
+       
       </BrowserRouter>
 
     </>

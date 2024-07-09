@@ -1,6 +1,13 @@
-import React from 'react'
+import React , { useState} from 'react'
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
 
 const middle = () => {
+    const [isOpen, setIsOpen]= useState(false)
+
+    const toggleDropDown =()=>{
+        setIsOpen(!isOpen)
+    }
 
     const items = [
         {
@@ -29,13 +36,13 @@ const middle = () => {
 
         <section className='p-[5em]'>
             <div className='flex justify-between items-center mb-[4em]'>
-                <div className='flex flex-col '>
-                    <h3>Trending Now</h3>
-                    <p>Discover the perfect blend of timeless atyle, quality and performance. Shop fotsie shoes, sneakers and gear </p>
+                <div className='flex flex-col w-[461px] h-[99px] '>
+                    <h1 className='font-bold text-2xl'>Trending Now</h1>
+                    <p className='hidden lg:flex'>Discover the perfect blend of timeless atyle, quality and performance. Shop fotsie shoes, sneakers and gear </p>
                 </div>
-                <div>
+                <div onClick={toggleDropDown} className='flex items-center gap-[0.5em] text-orange-500 text-[1.6em] cursor-pointer '>
                     <h1>sort by</h1>
-                    <i></i>
+                    <i >{isOpen? <RiArrowDropDownLine /> : <RiArrowDropUpLine/> }</i>
                 </div>
 
 
@@ -43,7 +50,7 @@ const middle = () => {
 
 
             <div className=''>
-                <div className='flex  gap-[4em]'>
+                <div className=' lg:flex flex-row gap-[4em]'>
                     {items.map((item, index) => (
                         <div key={index} className='flex flex-col'>
                             <div className='relative '>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const middle = () => {
 
     const items = [
@@ -25,7 +25,7 @@ const middle = () => {
     return (
 
 
-
+       <>
 
         <section className='p-[5em]'>
             <div className='flex justify-between items-center mb-[4em]'>
@@ -59,7 +59,10 @@ const middle = () => {
                           
                           
                             <div className=''>
-                            <img src="./public/addtobag.png" alt="" />
+                            <Link to='./cart'>
+                            <img src="./public/addtobag.png" alt="" className='cursor-pointer'/>
+                            </Link>
+                          
 
                             </div>
                             
@@ -73,35 +76,14 @@ const middle = () => {
 
         
 
-            {/* <div className='flex gap-[4em]'>
-
-
-                <div >
-                    <img src="./public/product1.png" alt="" />
-
-                    <p className='relative bottom-[4em]'>Loafers Foam x</p>
-                    <p className='relative bottom-[5em
-                        ]'>Men</p>
-                    <h3 className='relative'>$1200</h3>
-                    <img src="./public/addtobag.png" alt="" />
-                </div>
-                <div>
-                    <img src="./public/product2.png" alt="" />
-                    <p>Loafers Foam x</p>
-                    <p>Men</p>
-                    <h3>$1400</h3>
-                    <img src="./public/addtobag.png" alt="" />
-                </div>
-                <div>
-                    <img src="./public/product3.png" alt="" />
-                    <p>Loafers Foam x</p>
-                    <p>Men</p>
-                    <h3>$2400</h3>
-                    <img src="./public/addtobag.png" alt="" />
-                </div>
-
-            </div>  */}
+           
         </section>
+
+        
+
+        </ >
+        
+        
 
     )
 }
