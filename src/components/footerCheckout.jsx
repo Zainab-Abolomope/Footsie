@@ -24,9 +24,9 @@ const footerCart = () => {
 
             </div>
 
-            <div className='text-9xl font-bold text-center  text-gray-500  tracking-widest p-[1em]'>
-                <h1 className=''>Footsie</h1>
-            </div>
+            <div className='text-center text-4xl md:text-6xl lg:text-9xl font-bold text-gray-500 tracking-widest p-4'>
+      <h1>Footsie</h1>
+    </div>
 
 
         </>
