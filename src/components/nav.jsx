@@ -9,7 +9,7 @@ const Nav = () => {
       {/* Desktop navigation */}
       <div className='hidden lg:flex items-center justify-between p-4'>
         {/* Logo */}
-        <img className='w-24' src="./public/footsie.png" alt="Footsie Logo" />
+        <img className='w-24' src="./Footsie.png" alt="Footsie Logo" />
 
         {/* Main navigation links */}
         <div className='flex gap-4 text-white'>
@@ -44,7 +44,7 @@ const Nav = () => {
         {/* Bottom bar with search and cart icons */}
         <div className='flex justify-between items-center p-4'>
           <div>
-            <img src="./public/frame 155.png" alt="Search bar" />
+            <img src="./frame 155.png" alt="Search bar" />
           </div>
           <div className='flex gap-4 text-white'>
             <CiSearch />

@@ -6,19 +6,19 @@ const Middle = () => {
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: '/product1.png',
+            image: './product1.png',
             alt: 'White loafers',
         },
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: '/product2.png',
+            image: './product2.png',
             alt: 'Brown loafers',
         },
         {
             title: 'Loafers Foam X',
             price: '$164.99',
-            image: '/product3.png',
+            image: './product3.png',
             alt: 'Boots in a case',
         },
     ];
@@ -55,7 +55,7 @@ const Middle = () => {
                             {/* Add to bag button */}
                             <div className='p-4'>
                                 <Link to='/cart'>
-                                    <img src="./public/addtobag.png" alt="Add to bag" className='cursor-pointer' />
+                                    <img src="./addtobag.png" alt="Add to bag" className='cursor-pointer' />
                                 </Link>
                             </div>
                         </div>

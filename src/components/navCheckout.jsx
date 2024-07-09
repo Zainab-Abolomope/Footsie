@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div className='flex items-center justify-between p-4 sm:p-6 md:p-8 lg:p-10'>
       {/* Logo */}
-      <img className='w-24 sm:w-32' src="./public/footsie.png" alt="Footsie Logo" />
+      <img className='w-24 sm:w-32' src="./footsie.png" alt="Footsie Logo" />
 
       {/* Navigation Links */}
       <div className='hidden md:flex gap-6 text-black'>

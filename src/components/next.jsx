@@ -4,33 +4,33 @@ const shoes = [
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/brown-shoe.png',
+    image: './brown-shoe.png',
     description: 'New Arrivals',
   },
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/sneaker.png',
+    image: './sneaker.png',
   },
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/sneakerr.png',
+    image: './sneakerr.png',
   },
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/product1.png',
+    image: './product1.png',
   },
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/product2.png',
+    image: './product2.png',
   },
   {
     name: 'Loafers Foam X',
     price: '$164.99',
-    image: './public/product3.png',
+    image: './product3.png',
   },
 ];
 
