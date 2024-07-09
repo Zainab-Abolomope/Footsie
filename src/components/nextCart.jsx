@@ -1,80 +1,62 @@
-import React from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+import React from 'react';
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { RiArrowDropUpLine } from "react-icons/ri";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-
-const nextCart = () => {
-    return (
-
-        <>
-          <div  className='flex items-center justify-between py-[6em] px-[4em]'>
-            <div className='flex gap-[3em]'>
-                <div className='bg-gray-200 w-[50px] h-[50px] rounded-[50%]'>
-                    <div className='bg-gray-200 w-[50px] h-[50px] rounded-[50%]'></div>
-                    <h1>White</h1>
-
-                </div>
-                <div>
-                    <div  className='bg-amber-950 w-[50px] h-[50px] rounded-[50%]'></div>
-                    <h1>Brown</h1>
-
-                </div>
-                <div >
-                    <div className='bg-black w-[50px] h-[50px] rounded-[50%]'></div>
-                    <h1>Black</h1>
-
-                </div>
-
-            </div>
-
-
-            <div className='w-[407px] h-[114px]'>
-                <p>Through our collections, we blur the borders between high fashion and high performance. Like our sneakers by Stella MCCartney athletic clothing collection- designed to look the part inside and outside of the gym. or some of our addidas Originals lifestyle pieces, that can be worn as sports apparel too</p>
-            </div>
+const NextCart = () => {
+  return (
+    <>
+      {/* Main content */}
+      <div className='flex flex-col lg:flex-row items-center justify-between lg:py-16 lg:px-16 px-4'>
+        {/* Color options */}
+        <div className='flex gap-6 mb-4 lg:mb-0'>
+          <div className='bg-gray-200 w-12 h-12 rounded-full'></div>
+          <div className='bg-amber-950 w-12 h-12 rounded-full'></div>
+          <div className='bg-black w-12 h-12 rounded-full'></div>
         </div>
 
-        <div className='pl-[5em]'> 
-
-            <div className='flex gap-[4em] '>
-                <button className='flex items-center gap-[1em] '>
-                    <h1>size</h1>
-                    <i><RiArrowDropDownLine/></i>
-                </button>
-
-                <button className='flex items-center gap-[1em]'>
-                    <h1>quantity</h1>
-                    <i><RiArrowDropDownLine/></i>
-                </button>
-
-            </div>
-            <div className='flex flex-row gap-[2em]'>
-                <div className='px-[3em] py-[1em] text-black border border-black mt-[2em] '>45ER</div>
-                <div className='px-[3em] py-[1em] text-black border border-black mt-[2em] '>1 Pair</div>
-              
-
-            </div>
-            <div className=''> 
-            <Link to='/checkout'>
-
-            <button className=' px-[3em] py-[1em] text-black border border-black mt-[5em] cursor-pointer'>Proceed to checkout
-               {/* <i><FaArrowRightLong/></i> */}
-               
-               </button>
-            </Link>
-             
-               
-
-            </div>
+        {/* Text description */}
+        <div className='w-full lg:w-[407px]'>
+          <p className='text-sm lg:text-base'>
+            Through our collections, we blur the borders between high fashion and high performance. Like our sneakers by Stella McCartney athletic clothing collection - designed to look the part inside and outside of the gym, or some of our adidas Originals lifestyle pieces that can be worn as sports apparel too.
+          </p>
         </div>
-        <hr className='mt-[12em] border-solid border-black'  />
-        
+      </div>
 
-        </>
-     
-      
-    )
-}
+      {/* Options and buttons */}
+      <div className='lg:pl-20 px-4'>
+        {/* Size and quantity buttons */}
+        <div className='flex flex-col lg:flex-row gap-8 mb-8'>
+          <button className='flex items-center gap-2'>
+            <h1 className='text-sm lg:text-base'>Size</h1>
+            <i><RiArrowDropDownLine/></i>
+          </button>
 
-export default nextCart
+          <button className='flex items-center gap-2'>
+            <h1 className='text-sm lg:text-base'>Quantity</h1>
+            <i><RiArrowDropDownLine/></i>
+          </button>
+        </div>
+
+        {/* Product details */}
+        <div className='flex flex-col lg:flex-row gap-8'>
+          <div className='px-6 lg:px-8 py-4 text-black border border-black mb-4 lg:mb-0'>45ER</div>
+          <div className='px-6 lg:px-8 py-4 text-black border border-black mb-4 lg:mb-0'>1 Pair</div>
+        </div>
+
+        {/* Proceed to checkout button */}
+        <div className='mt-8 lg:mt-20'>
+          <Link to='/checkout'>
+            <button className='px-6 lg:px-8 py-4 text-black border border-black cursor-pointer'>
+              Proceed to Checkout
+            </button>
+          </Link>
+        </div>
+      </div>
+
+      {/* Divider */}
+      <hr className='mt-16 lg:mt-40 border-solid border-black' />
+    </>
+  );
+};
+
+export default NextCart;

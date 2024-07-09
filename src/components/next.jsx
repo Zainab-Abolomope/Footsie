@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const shoes = [
   {
     name: 'Loafers Foam X',
@@ -37,47 +36,19 @@ const shoes = [
 
 function Next() {
   return (
-
     <>
-      <div className='flex items-center justify-center'>
-        <div>
-          <div>
-            <img src="./public/brown-shoe.png" alt="" />
+      {/* Image grid section */}
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 lg:px-16 pt-8'>
+        {shoes.map((shoe, index) => (
+          <div key={index} className='flex justify-center items-center'>
+            <img src={shoe.image} alt={shoe.name} className='max-w-full h-auto' />
           </div>
-        </div>
-        <div>
-          <div>
-            <img src="./public/mens.png" alt="" />
-            <img src="./public/shoes.png" alt="" />
-
-          </div>
-          <div className='flex'>
-            <img src="./public/sneaker.png" alt="" />
-            <img src="./public/sneakerr.png" alt="" />
-          </div>
-
-        </div>
-
-
+        ))}
       </div>
 
-      <div className='flex pl-[7em] pt-[3em]'>
-        <img src="./public/product1.png" alt="" />
-        <img src="./public/product2.png" alt="" />
-        <img src="./public/product3.png" alt="" />
-
-      </div>
-
-      <hr className='mt-[12em] border-solid border-black'  />
-
-
-     
-
-
+      {/* Divider */}
+      <hr className='mt-12 border-solid border-black' />
     </>
-
-
-
   );
 }
 

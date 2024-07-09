@@ -1,35 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const top = () => {
+const Top = () => {
   return (
     <>
-      <div className='hidden lg:flex max-w-[1102px] max-h-[372px] m-auto'>
-        <img src="./public/footsiee.png" alt="" />
-
+      {/* Image section */}
+      <div className='hidden lg:flex justify-center max-w-full max-h-[372px] m-auto'>
+        <img src="./public/footsiee.png" className='w-full h-auto' alt="Footsiee Image" />
       </div>
 
-      <div className=' text-white w-[407px] h-[197px] relative top-[5em]  left-[223px] text-center '>
-        <p className=''>Through our collections, we blur the borders between high fashion and high performance. Like our sneakers by Stella MCCartney athletic clothing collection- designed to look the part inside and outside of the gym. or some of our addidas Originals lifestyle pieces, that can be worn as sports apparel too</p>
-         <Link to='./cart'>
-         <img className='cursor-pointer'src="./public/explore.png" alt=""  />
-         </Link>
-        
+      {/* Text and Link section */}
+      <div className='text-white text-center lg:text-left lg:w-[407px] lg:h-[197px] lg:absolute lg:top-[5em] lg:left-[223px] px-4 lg:px-0'>
+        <p className=''>
+          Through our collections, we blur the borders between high fashion and high performance. Like our sneakers by Stella McCartney athletic clothing collection - designed to look the part inside and outside of the gym, or some of our adidas Originals lifestyle pieces that can be worn as sports apparel too.
+        </p>
+        <Link to='/cart' className='block mt-4'>
+          <img src="./public/explore.png" className='cursor-pointer' alt="Explore Image" />
+        </Link>
       </div>
 
-      <div>
-        <img src="./search.png" className='w-[234px] h-[40px] relative left-[70em] top-[8em] ' alt="" />
+      {/* Search Image */}
+      <div className='hidden lg:block absolute top-[8em] right-[2em]'>
+        <img src="./search.png" className='w-[234px] h-[40px]' alt="Search Image" />
       </div>
-      
-      
-      </>
+    </>
+  );
+};
 
-
-
-
-
-
-  )
-}
-
-export default top
+export default Top;

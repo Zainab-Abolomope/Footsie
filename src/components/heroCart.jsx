@@ -1,22 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-const heroCart = () => {
+const HeroCart = () => {
   return (
-
     <>
-
-    <div className=''>
-      <img src="/search.png" alt="" className='m-auto w-[234px] h-[40px]' />
-    </div>
-     <div className='text-white relative w-[296px] h-[153.6px] top-[10em] left-[174px] text-5xl'>
-      <h1>Loafers Foam X</h1>
-      <p>Men</p>
-      <p>$1400</p>
-
-    </div>
+      <div className='text-center'>
+        <img src="/search.png" alt="Search Icon" className='m-auto w-40 h-8' />
+      </div>
+      <div className='text-white text-center mt-8'>
+        <h1 className='text-3xl md:text-5xl lg:text-6xl'>Loafers Foam X</h1>
+        <p className='text-lg md:text-xl lg:text-2xl'>Men</p>
+        <p className='text-2xl md:text-3xl lg:text-4xl'>$1400</p>
+      </div>
     </>
-   
-  )
-}
+  );
+};
 
-export default heroCart
+export default HeroCart;

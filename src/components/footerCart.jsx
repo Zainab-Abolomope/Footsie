@@ -1,34 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { CiSearch } from "react-icons/ci";
 
-const footerCart = () => {
-  return (
+const FooterCart = () => {
+    return (
+        <>
+            <div className='p-4 lg:p-8 flex flex-col lg:flex-row justify-between items-center'>
+                {/* Navigation Links */}
+                <div className='flex flex-wrap gap-5 lg:gap-10'>
+                    <Link to='/men'>Men</Link>
+                    <Link to='/women'>Women</Link>
+                    <Link to='/kids'>Kids</Link>
+                    <Link to='/bags'>Bags</Link>
+                </div>
+                
+                {/* Search Bar */}
+                <div className='flex items-center mt-4 lg:mt-0'>
+                    <h1 className='text-lg lg:text-xl'>Search</h1>
+                    <i><CiSearch className='text-2xl ml-2' /></i>
+                </div>
+            </div>
 
-    <>
-    <hr />
-      <div className='p-[4em] flex justify-between items=center'>
-        <div className='flex gap-5'>
-          <Link>Men</Link>
-          <Link>Women</Link>
-          <Link>Kid</Link>
-          <Link>Bags</Link>
-        </div>
-        <div className='flex items-center gap-[1em]'>
-         <h1>search</h1>
-         <i><CiSearch/></i>
-         
-        </div>
+            {/* Footer Logo */}
+            <div className='text-4xl lg:text-9xl font-bold text-center text-gray-500 tracking-widest p-4'>
+                <h1>Footsie</h1>
+            </div>
+        </>
+    );
+};
 
-      </div>
-
-      <div className='text-9xl font-bold text-center  text-gray-500  tracking-widest p-[1em]'>
-        <h1 className=''>Footsie</h1>
-      </div>
-    </>
-
-
-  )
-}
-
-export default footerCart
+export default FooterCart;

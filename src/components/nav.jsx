@@ -1,98 +1,61 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { CiShoppingCart } from "react-icons/ci";
-import { FaSignal } from "react-icons/fa";
-import { FaWifi } from "react-icons/fa";
-import { CiBatteryFull } from "react-icons/ci";
-import { CiSearch } from "react-icons/ci";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { CiShoppingCart, CiBatteryFull, CiSearch } from "react-icons/ci";
+import { FaSignal, FaWifi } from "react-icons/fa";
 
-const nav = () => {
+const Nav = () => {
   return (
-
     <>
-      <div className='hidden lg:flex items-center justify-between p-[2em]'>
+      {/* Desktop navigation */}
+      <div className='hidden lg:flex items-center justify-between p-4'>
+        {/* Logo */}
+        <img className='w-24' src="./public/footsie.png" alt="Footsie Logo" />
 
-
-        <img className='w-[74px] h-[24px]' src="./public/footsie.png" alt="" />
-        <div className='flex gap-[2em] text-white'>
-          <Link to=''>Men</Link>
-          <Link to=''>Women</Link>
-          <Link to=''>Kids</Link>
+        {/* Main navigation links */}
+        <div className='flex gap-4 text-white'>
+          <Link to='/'>Men</Link>
+          <Link to='/'>Women</Link>
+          <Link to='/'>Kids</Link>
         </div>
-        <Link to='./cart'>
-          <button className='flex w-[108] h-[35px] g-[8px] items-center p-[8px] justify-center'>
-            <h1 className='text-white'>Your bag</h1>
-            <i className='text-white text-2xl'><CiShoppingCart /></i>
+
+        {/* Cart button */}
+        <Link to='/cart'>
+          <button className='flex items-center bg-gray-700 rounded-lg px-4 py-2 text-white'>
+            <span className='mr-2'>Your Bag</span>
+            <CiShoppingCart className='text-2xl' />
           </button>
         </Link>
-
-
       </div>
 
-      <div>
-        <div className='flex justify-between p-[1em] text-white lg:hidden'>
+      {/* Mobile navigation */}
+      <div className='lg:hidden'>
+        {/* Top bar with time, signal, wifi, battery */}
+        <div className='flex justify-between items-center p-4 text-white'>
           <div>
             <h1>10:41</h1>
-
           </div>
-
-          <div className='flex gap-[1em]'>
-            <i><FaSignal /></i>
-            <i><FaWifi /></i>
-            <i><CiBatteryFull /></i>
+          <div className='flex gap-4'>
+            <FaSignal />
+            <FaWifi />
+            <CiBatteryFull />
           </div>
-
         </div>
 
-
-        <div className='flex justify-between items-ceenter p-[1em] lg:hidden'>
-
+        {/* Bottom bar with search and cart icons */}
+        <div className='flex justify-between items-center p-4'>
           <div>
-            <img src="./public/frame 155.png" alt="" />
-
+            <img src="./public/frame 155.png" alt="Search bar" />
           </div>
-
-
-          <div className='flex gap-[1em] text-white items-center'>
-             <i><CiSearch /></i>
-            <i><CiShoppingCart /></i>
+          <div className='flex gap-4 text-white'>
+            <CiSearch />
+            <Link to='/cart'>
+              <CiShoppingCart />
+            </Link>
           </div>
         </div>
-
       </div>
-
-
-      {/* <div className='p-[1em] flex justify-between lg:hidden'>
-        <div>
-            <img src="./public/frame 155.png" alt="" /></div>
-        </div>
-
-        <div>
-        <div>
-            <i><CiSearch /></i>
-          </div>
-
-          <div>
-            <i><CiShoppingCart /></i>
-          </div>
-
-        </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
+  );
+};
 
-  )
-}
-
-export default nav
+export default Nav;
