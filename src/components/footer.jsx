@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className='p-4 lg:p-8 flex flex-col lg:flex-row justify-between items-center'>
-                {/* Navigation Links */}
+                {/* Navigation */}
                 <div className='flex flex-wrap gap-5 lg:gap-10'>
                     <Link to='/men'>Men</Link>
                     <Link to='/women'>Women</Link>
@@ -14,7 +14,7 @@ const Footer = () => {
                     <Link to='/bags'>Bags</Link>
                 </div>
                 
-                {/* Search Bar */}
+                {/* Search*/}
                 <div className='flex items-center mt-4 lg:mt-0'>
                     <h1 className='text-lg lg:text-xl'>Search</h1>
                     <i><CiSearch className='text-2xl ml-2' /></i>

@@ -9,12 +9,12 @@ const HeroCheckout = () => {
             </div>
 
             <div className='flex flex-col lg:flex-row items-center p-4 lg:p-12'>
-                {/* Product image */}
+                {/*  image */}
                 <div className='lg:mr-12 mb-4 lg:mb-0'>
                     <img src="./product3.png" alt="Product Image" className='w-64 lg:w-auto mx-auto lg:mx-0' />
                 </div>
                 
-                {/* Product details */}
+                {/*  details */}
                 <div className='flex flex-col lg:ml-12'>
                     <h1 className='text-2xl lg:text-4xl mb-2'>Loafers Foam X</h1>
                     
@@ -36,7 +36,7 @@ const HeroCheckout = () => {
                         </button>
                     </div>
                     
-                    {/* Selected Size and Quantity */}
+                    {/*  Size and Quantity */}
                     <div className='flex flex-row gap-4 mb-4'>
                         <div className='px-4 py-2 text-black border border-black'>45ER</div>
                         <div className='px-4 py-2 text-black border border-black'>1 Pair</div>
@@ -49,7 +49,7 @@ const HeroCheckout = () => {
                 </div>
             </div>
             
-            {/* Divider */}
+            {/* Divides the page */}
             <hr className='mt-8 mb-6 border-solid border-black' />
         </>
     );

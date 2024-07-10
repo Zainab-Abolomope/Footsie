@@ -68,7 +68,7 @@ const middle = () => {
                           <Link to='/cart'>
 
                           <div className=''>
-                            <img src="./addtobag.png" alt="" />
+                            <img src="./addtobag.png" alt="" className=' hover:bg-orange-600 rounded-2xl' />
 
                             </div>
                           </Link>

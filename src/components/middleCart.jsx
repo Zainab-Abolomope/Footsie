@@ -42,11 +42,11 @@ const Middle = () => {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {items.map((item, index) => (
                         <div key={index} className='flex flex-col bg-white rounded-lg overflow-hidden shadow-md'>
-                            {/* Product image */}
+                            {/*  image */}
                             <div className='relative'>
                                 <img src={item.image} alt={item.alt} className='object-cover w-full h-72 hover:scale-105 duration-300' />
                             </div>
-                            {/* Product details */}
+                            {/*  details */}
                             <div className='p-4 bg-gray-900 text-white'>
                                 <p className='text-sm'>{item.title}</p>
                                 <p className='text-xs mb-2'>Men</p>
