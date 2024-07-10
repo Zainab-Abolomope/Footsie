@@ -5,7 +5,7 @@ import Top from './top'
 
 const product = () => {
   return (
-    <main className='hero max-w-full h-[970px] '>
+    <main className='hero max-w-full h-[700px] '>
       <Navbar/>
       <Top/>
      
