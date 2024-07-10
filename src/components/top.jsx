@@ -5,7 +5,7 @@ const Top = () => {
   return (
     <>
       {/* Image section */}
-      <div className='hidden lg:flex justify-center max-w-full max-h-[372px] m-auto'>
+      <div className='hidden lg:flex justify-center max-w-full max-h-[985px] m-auto'>
         <img src="./footsiee.png" className='w-full h-auto' alt="Footsiee Image" />
       </div>
 

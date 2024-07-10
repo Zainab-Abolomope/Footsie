@@ -53,11 +53,10 @@ const Middle = () => {
                                 <h3 className='text-base'>{item.price}</h3>
                             </div>
                             {/* Add to bag button */}
-                            <div className='p-4'>
-                                <Link to='/cart'>
-                                    <img src="./addtobag.png" alt="Add to bag" className='cursor-pointer' />
-                                </Link>
-                            </div>
+
+                         
+
+
                         </div>
                     ))}
                 </div>

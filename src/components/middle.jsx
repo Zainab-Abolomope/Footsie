@@ -1,6 +1,7 @@
 import React , { useState} from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RiArrowDropUpLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const middle = () => {
     const [isOpen, setIsOpen]= useState(false)
@@ -64,11 +65,14 @@ const middle = () => {
 
                             </div>
                           
-                          
-                            <div className=''>
+                          <Link to='/checkout'>
+
+                          <div className=''>
                             <img src="./addtobag.png" alt="" />
 
                             </div>
+                          </Link>
+                           
                             
                         </div>
                     ))}

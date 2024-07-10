@@ -1,14 +1,16 @@
-import React from 'react';
-import Navbar from './nav';
-import Top from './top';
+import React from 'react'
+import Navbar from './nav'
+import Top from './top'
 
-const Product = () => {
+
+const product = () => {
   return (
-    <main className='hero bg-gray-100 text-gray-900'>
-      <Navbar />
-      <Top />
+    <main className='hero max-w-full h-[970px] '>
+      <Navbar/>
+      <Top/>
+     
     </main>
-  );
+  )
 }
 
-export default Product;
+export default product
