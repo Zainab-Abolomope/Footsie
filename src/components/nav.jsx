@@ -44,7 +44,7 @@ const Nav = () => {
         {/* Bottom bar with search and cart icons */}
         <div className='flex justify-between items-center p-4'>
           <div>
-            <img src="./frame 155.png" alt="Search bar" />
+            <img src="./new.png" alt="Search bar" />
           </div>
           <div className='flex gap-4 text-white'>
             <CiSearch />

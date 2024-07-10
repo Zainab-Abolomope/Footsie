@@ -34,7 +34,7 @@ const Middle = () => {
                     </div>
                     <div>
                         <h1 className='text-lg md:text-xl font-bold'>Sort by</h1>
-                        <i></i> {/* Replace with sort icon */}
+                        <i></i> 
                     </div>
                 </div>
 

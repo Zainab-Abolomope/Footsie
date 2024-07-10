@@ -65,7 +65,7 @@ const middle = () => {
 
                             </div>
                           
-                          <Link to='/checkout'>
+                          <Link to='/cart'>
 
                           <div className=''>
                             <img src="./addtobag.png" alt="" />
