@@ -36,8 +36,8 @@ const middle = () => {
 
 
         <section className='p-[5em]'>
-            <div className='flex justify-between items-center mb-[4em]'>
-                <div className='flex flex-col w-[461px] h-[99px] '>
+            <div className='flex justify-between items-center mb-[4em] '>
+                <div className='flex flex-col w-[461px] h-[99px] items-center'>
                     <h1 className='font-bold text-2xl'>Trending Now</h1>
                     <p className='hidden lg:flex'>Discover the perfect blend of timeless atyle, quality and performance. Shop fotsie shoes, sneakers and gear </p>
                 </div>
