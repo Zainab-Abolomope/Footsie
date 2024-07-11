@@ -41,7 +41,7 @@ const middle = () => {
                     <h1 className='font-bold text-2xl'>Trending Now</h1>
                     <p className='hidden lg:flex'>Discover the perfect blend of timeless atyle, quality and performance. Shop fotsie shoes, sneakers and gear </p>
                 </div>
-                <div onClick={toggleDropDown} className='flex items-center gap-[0.5em] text-orange-500 text-[1.6em] cursor-pointer '>
+                <div onClick={toggleDropDown} className='hidden md:flex items-center gap-[0.5em] text-orange-500 text-[2.2em] font-light cursor-pointer  '>
                     <h1>sort by</h1>
                     <i >{isOpen? <RiArrowDropDownLine /> : <RiArrowDropUpLine/> }</i>
                 </div>

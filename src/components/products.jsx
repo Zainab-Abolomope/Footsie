@@ -4,7 +4,7 @@ import Top from './top';
 
 const Product = () => {
   return (
-    <main className='hero min-h-[650px] md:min-h-[600px] lg:min-h-[700px]'>
+    <main className='hero min-h-[580px] md:min-h-[600px] lg:min-h-[700px]'>
       <Navbar />
       <Top />
     </main>
